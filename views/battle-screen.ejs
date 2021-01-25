@@ -5,11 +5,241 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Battleship Battle Game</title>
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+  <div class="gameboard container-game">
+    <div class="gameboard game-status-bar"></div>
+    <div class="gameboard opponent-gameboard">
+      <div class="tiles">
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+      </div>
+    </div>
+    <div class="gameboard player-gameboard">
+      <div class="tiles">
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+        <div class="tile-row">
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+          <span class="game-tile"></span>
+        </div>
+      </div>
+    </div>
+    <div class="gameboard gamelog-ship-status-bar"></div>
+    <div class="gameboard leaderboard-sidebar"></div>
+  </div>
 
-  <div class=""></div>
 
 </body>
 
