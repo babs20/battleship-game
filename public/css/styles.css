@@ -1,6 +1,7 @@
 html,
 body,
 div {
+  box-sizing: border-box;
   height: 100%;
   width: 100%;
 }
@@ -80,10 +81,10 @@ body {
 }
 
 .game-tile {
-  width: 8%;
-  min-height: 90%;
+  width: 8.5%;
+  min-height: 100%;
   background-color: black;
-  /* margin: 0.25em; */
   align-self: center;
   justify-self: center;
+  /* flex-basis: 7%; */
 }

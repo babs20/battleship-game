@@ -1,0 +1,39 @@
+main .game {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+main .game-left-info {
+  width: 20%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2d42;
+  border-radius: 2rem;
+}
+main .game-boards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2rem;
+  margin: 0 1rem 0 1rem;
+}
+main .game-right-info {
+  width: 20%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2d42;
+  border-radius: 2rem;
+}

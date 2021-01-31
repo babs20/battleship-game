@@ -1,0 +1,65 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+
+@use 'base';
+
+  html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+  * Global layout stuff
+  */
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: base.$primary-blue;
+
+  nav {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background-color: base.$secondary-blue;
+  }
+
+  header {
+    display: flex;
+    height: 15vh;
+    width: 95%;
+    background-color: base.$secondary-blue;
+    border-radius: 2rem;
+    margin-top: 2rem;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 95%;
+    background-color: base.$secondary-blue;
+    margin: 2rem 0 2rem 0;
+    border-radius: 2rem;
+  }
+
+  footer {
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    background-color: base.$secondary-blue;
+    margin-bottom: 2rem;
+  }
+}

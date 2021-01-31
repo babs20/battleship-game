@@ -1,0 +1,26 @@
+$primary-blue: #2b2d42;
+$secondary-blue: #8d99ae;
+$neutral-offwhite: #edf2f4;
+$bright-red: #ef233c;
+$calm-red: #d80032;
+
+@mixin corner {
+  border-radius: 2rem;
+}
+
+@mixin quick-center {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bounce-animation {
+  @keyframes bounce {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    100% {
+      transform: translate(0, 10px);
+    }
+  }
+}
