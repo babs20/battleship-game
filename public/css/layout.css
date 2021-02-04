@@ -46,7 +46,7 @@ body main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 70vh;
   width: 95%;
   background-color: #8d99ae;
   margin: 2rem 0 2rem 0;
@@ -54,8 +54,10 @@ body main {
 }
 body footer {
   display: flex;
-  height: 15vh;
-  width: 100%;
-  background-color: #8d99ae;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+  width: 95%;
+  border-radius: 2rem;
   margin-bottom: 2rem;
 }

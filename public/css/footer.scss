@@ -1,0 +1,65 @@
+@use 'base';
+
+footer {
+  .text-log {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    background-color: base.$secondary-blue;
+    margin: 0.2rem;
+    @include base.corner;
+  }
+
+  textarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0.2rem;
+    width: 80%;
+    height: 80%;
+    color: base.$primary-blue;
+    border: unset;
+    // border-left: 0.25rem solid base.$primary-blue;
+    background-color: rgba(0, 0, 0, 0);
+    resize: none;
+    scrollbar-width: none;
+  }
+
+  textarea:focus-visible {
+    outline: unset;
+  }
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+    min-height: 80%;
+    color: base.$neutral-offwhite;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    font-kerning: 1000;
+    background-color: base.$primary-blue;
+    border-radius: 6rem;
+    writing-mode: vertical-lr;
+    transform: scale(-1, -1);
+    margin-right: 0.5rem;
+  }
+  .leaderboard {
+    font-size: 1.25rem;
+  }
+  // .separate {
+  //   width: 2%;
+  //   height: 80%;
+  //   background-color: base.$primary-blue;
+  //   margin-top: 1rem;
+  //   @include base.corner;
+  // }
+}

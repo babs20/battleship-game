@@ -1,0 +1,51 @@
+footer .text-log {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+  background-color: #8d99ae;
+  margin: 0.2rem;
+  border-radius: 2rem;
+}
+footer textarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1em;
+  margin: 0.2rem;
+  width: 80%;
+  height: 80%;
+  color: #2b2d42;
+  border: unset;
+  background-color: rgba(0, 0, 0, 0);
+  resize: none;
+  scrollbar-width: none;
+}
+footer textarea:focus-visible {
+  outline: unset;
+}
+footer .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 8%;
+  min-height: 80%;
+  color: #edf2f4;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  font-kerning: 1000;
+  background-color: #2b2d42;
+  border-radius: 6rem;
+  writing-mode: vertical-lr;
+  transform: scale(-1, -1);
+  margin-right: 0.5rem;
+}
+footer .leaderboard {
+  font-size: 1.25rem;
+}

@@ -9,6 +9,13 @@ header {
     width: 100%;
     height: 100%;
   }
+  .ships.player {
+    margin-left: 2.5rem;
+  }
+
+  .ships.cpu {
+    margin-right: 2rem;
+  }
   .coords {
     display: flex;
     flex-direction: row;
@@ -17,12 +24,7 @@ header {
     height: 100%;
     width: 20%;
   }
-  // .separate {
-  //   width: 2%;
-  //   height: 90%;
-  //   background-color: base.$primary-blue;
-  //   @include base.corner;
-  // }
+
   p {
     display: flex;
     flex-direction: row;

@@ -50,7 +50,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 70vh;
     width: 95%;
     background-color: base.$secondary-blue;
     margin: 2rem 0 2rem 0;
@@ -59,9 +59,12 @@ body {
 
   footer {
     display: flex;
-    height: 15vh;
-    width: 100%;
-    background-color: base.$secondary-blue;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    width: 95%;
+    // background-color: base.$secondary-blue;
+    border-radius: 2rem;
     margin-bottom: 2rem;
   }
 }

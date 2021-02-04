@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="/css/gameboards.css" type="text/css" />
   <link rel="stylesheet" href="/css/ships.css" type="text/css" />
   <link rel="stylesheet" href="/css/header.css" type="text/css" />
+  <link rel="stylesheet" href="/css/footer.css" type="text/css" />
 
 
   <!-- External JS -->
@@ -40,7 +41,7 @@
   </nav>
   <header>
     <div class="side">
-      <div class="ships">
+      <div class="ships player">
         <p class="dead">Carrier</p>
         <p class="dead">Battleship</p>
         <p class="dead">Submarine</p>
@@ -50,10 +51,10 @@
     </div>
 
     <div class="coords">
-      <p>A5</p>
+      <p>H10</p>
     </div>
     <div class="side">
-      <div class="ships">
+      <div class="ships cpu">
         <p class="alive">Carrier</p>
         <p class="alive">Battleship</p>
         <p class="alive">Submarine</p>
@@ -65,23 +66,9 @@
   <main>
     <div class="game">
       <section class="game-boards">
+        <p>TURN: PLAYER 1</p>
         <div class="player human">
-          <!-- <header class="x-axis">
-
-          </header> -->
           <div class="center-board">
-            <!-- <aside class="y-axis">
-              <p>1</p>
-              <p>2</p>
-              <p>3</p>
-              <p>4</p>
-              <p>5</p>
-              <p>6</p>
-              <p>7</p>
-              <p>8</p>
-              <p>9</p>
-              <p>10</p>
-            </aside> -->
             <div class="game-bounding-box">
               <div class="boat carrier" draggable="true"></div>
               <div class="boat battleship"></div>
@@ -89,124 +76,124 @@
               <div class="boat submarine"></div>
               <div class="boat destroyer"></div>
               <div class="row one">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A1</div>
+                <div class="game-tile">B1</div>
+                <div class="game-tile">C1</div>
+                <div class="game-tile">D1</div>
+                <div class="game-tile">E1</div>
+                <div class="game-tile">F1</div>
+                <div class="game-tile">G1</div>
+                <div class="game-tile">H1</div>
+                <div class="game-tile">I1</div>
+                <div class="game-tile">J1</div>
               </div>
               <div class="row two">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A2</div>
+                <div class="game-tile">B2</div>
+                <div class="game-tile">C2</div>
+                <div class="game-tile">D2</div>
+                <div class="game-tile">E2</div>
+                <div class="game-tile">F2</div>
+                <div class="game-tile">G2</div>
+                <div class="game-tile">H2</div>
+                <div class="game-tile">I2</div>
+                <div class="game-tile">J2</div>
               </div>
               <div class="row three">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A3</div>
+                <div class="game-tile">B3</div>
+                <div class="game-tile">C3</div>
+                <div class="game-tile">D3</div>
+                <div class="game-tile">E3</div>
+                <div class="game-tile">F3</div>
+                <div class="game-tile">G3</div>
+                <div class="game-tile">H3</div>
+                <div class="game-tile">I3</div>
+                <div class="game-tile">J3</div>
               </div>
               <div class="row four">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A4</div>
+                <div class="game-tile">B4</div>
+                <div class="game-tile">C4</div>
+                <div class="game-tile">D4</div>
+                <div class="game-tile">E4</div>
+                <div class="game-tile">F4</div>
+                <div class="game-tile">G4</div>
+                <div class="game-tile">H4</div>
+                <div class="game-tile">I4</div>
+                <div class="game-tile">J4</div>
               </div>
               <div class="row five">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A5</div>
+                <div class="game-tile">B5</div>
+                <div class="game-tile">C5</div>
+                <div class="game-tile">D5</div>
+                <div class="game-tile">E5</div>
+                <div class="game-tile">F5</div>
+                <div class="game-tile">G5</div>
+                <div class="game-tile">H5</div>
+                <div class="game-tile">I5</div>
+                <div class="game-tile">J5</div>
               </div>
               <div class="row six">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A6</div>
+                <div class="game-tile">B6</div>
+                <div class="game-tile">C6</div>
+                <div class="game-tile">D6</div>
+                <div class="game-tile">E6</div>
+                <div class="game-tile">F6</div>
+                <div class="game-tile">G6</div>
+                <div class="game-tile">H6</div>
+                <div class="game-tile">I6</div>
+                <div class="game-tile">J6</div>
               </div>
               <div class="row seven">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A7</div>
+                <div class="game-tile">B7</div>
+                <div class="game-tile">C7</div>
+                <div class="game-tile">D7</div>
+                <div class="game-tile">E7</div>
+                <div class="game-tile">F7</div>
+                <div class="game-tile">G7</div>
+                <div class="game-tile">H7</div>
+                <div class="game-tile">I7</div>
+                <div class="game-tile">J7</div>
               </div>
               <div class="row eight">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A8</div>
+                <div class="game-tile">B8</div>
+                <div class="game-tile">C8</div>
+                <div class="game-tile">D8</div>
+                <div class="game-tile">E8</div>
+                <div class="game-tile">F8</div>
+                <div class="game-tile">G8</div>
+                <div class="game-tile">H8</div>
+                <div class="game-tile">I8</div>
+                <div class="game-tile">J8</div>
               </div>
               <div class="row nine">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A9</div>
+                <div class="game-tile">B9</div>
+                <div class="game-tile">C9</div>
+                <div class="game-tile">D9</div>
+                <div class="game-tile">E9</div>
+                <div class="game-tile">F9</div>
+                <div class="game-tile">G9</div>
+                <div class="game-tile">H9</div>
+                <div class="game-tile">I9</div>
+                <div class="game-tile">J9</div>
               </div>
               <div class="row ten">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A10</div>
+                <div class="game-tile">B10</div>
+                <div class="game-tile">C10</div>
+                <div class="game-tile">D10</div>
+                <div class="game-tile">E10</div>
+                <div class="game-tile">F10</div>
+                <div class="game-tile">G10</div>
+                <div class="game-tile">H10</div>
+                <div class="game-tile">I10</div>
+                <div class="game-tile">J10</div>
               </div>
             </div>
           </div>
@@ -214,138 +201,126 @@
         <div class="separate"></div>
         <div class="player cpu">
           <div class="center-board">
-            <!-- <aside class="y-axis">
-              <p>1</p>
-              <p>2</p>
-              <p>3</p>
-              <p>4</p>
-              <p>5</p>
-              <p>6</p>
-              <p>7</p>
-              <p>8</p>
-              <p>9</p>
-              <p>10</p>
-            </aside> -->
             <div class="game-bounding-box">
               <div class="row one">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A1</div>
+                <div class="game-tile">B1</div>
+                <div class="game-tile">C1</div>
+                <div class="game-tile">D1</div>
+                <div class="game-tile">E1</div>
+                <div class="game-tile">F1</div>
+                <div class="game-tile">G1</div>
+                <div class="game-tile">H1</div>
+                <div class="game-tile">I1</div>
+                <div class="game-tile">J1</div>
               </div>
               <div class="row two">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A2</div>
+                <div class="game-tile">B2</div>
+                <div class="game-tile">C2</div>
+                <div class="game-tile">D2</div>
+                <div class="game-tile">E2</div>
+                <div class="game-tile">F2</div>
+                <div class="game-tile">G2</div>
+                <div class="game-tile">H2</div>
+                <div class="game-tile">I2</div>
+                <div class="game-tile">J2</div>
               </div>
               <div class="row three">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A3</div>
+                <div class="game-tile">B3</div>
+                <div class="game-tile">C3</div>
+                <div class="game-tile">D3</div>
+                <div class="game-tile">E3</div>
+                <div class="game-tile">F3</div>
+                <div class="game-tile">G3</div>
+                <div class="game-tile">H3</div>
+                <div class="game-tile">I3</div>
+                <div class="game-tile">J3</div>
               </div>
               <div class="row four">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A4</div>
+                <div class="game-tile">B4</div>
+                <div class="game-tile">C4</div>
+                <div class="game-tile">D4</div>
+                <div class="game-tile">E4</div>
+                <div class="game-tile">F4</div>
+                <div class="game-tile">G4</div>
+                <div class="game-tile">H4</div>
+                <div class="game-tile">I4</div>
+                <div class="game-tile">J4</div>
               </div>
               <div class="row five">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A5</div>
+                <div class="game-tile">B5</div>
+                <div class="game-tile">C5</div>
+                <div class="game-tile">D5</div>
+                <div class="game-tile">E5</div>
+                <div class="game-tile">F5</div>
+                <div class="game-tile">G5</div>
+                <div class="game-tile">H5</div>
+                <div class="game-tile">I5</div>
+                <div class="game-tile">J5</div>
               </div>
               <div class="row six">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A6</div>
+                <div class="game-tile">B6</div>
+                <div class="game-tile">C6</div>
+                <div class="game-tile">D6</div>
+                <div class="game-tile">E6</div>
+                <div class="game-tile">F6</div>
+                <div class="game-tile">G6</div>
+                <div class="game-tile">H6</div>
+                <div class="game-tile">I6</div>
+                <div class="game-tile">J6</div>
               </div>
               <div class="row seven">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A7</div>
+                <div class="game-tile">B7</div>
+                <div class="game-tile">C7</div>
+                <div class="game-tile">D7</div>
+                <div class="game-tile">E7</div>
+                <div class="game-tile">F7</div>
+                <div class="game-tile">G7</div>
+                <div class="game-tile">H7</div>
+                <div class="game-tile">I7</div>
+                <div class="game-tile">J7</div>
               </div>
               <div class="row eight">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A8</div>
+                <div class="game-tile">B8</div>
+                <div class="game-tile">C8</div>
+                <div class="game-tile">D8</div>
+                <div class="game-tile">E8</div>
+                <div class="game-tile">F8</div>
+                <div class="game-tile">G8</div>
+                <div class="game-tile">H8</div>
+                <div class="game-tile">I8</div>
+                <div class="game-tile">J8</div>
               </div>
               <div class="row nine">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A9</div>
+                <div class="game-tile">B9</div>
+                <div class="game-tile">C9</div>
+                <div class="game-tile">D9</div>
+                <div class="game-tile">E9</div>
+                <div class="game-tile">F9</div>
+                <div class="game-tile">G9</div>
+                <div class="game-tile">H9</div>
+                <div class="game-tile">I9</div>
+                <div class="game-tile">J9</div>
               </div>
               <div class="row ten">
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
-                <div class="game-tile"></div>
+                <div class="game-tile">A10</div>
+                <div class="game-tile">B10</div>
+                <div class="game-tile">C10</div>
+                <div class="game-tile">D10</div>
+                <div class="game-tile">E10</div>
+                <div class="game-tile">F10</div>
+                <div class="game-tile">G10</div>
+                <div class="game-tile">H10</div>
+                <div class="game-tile">I10</div>
+                <div class="game-tile">J10</div>
               </div>
             </div>
           </div>
@@ -354,7 +329,36 @@
     </div>
   </main>
   <footer>
-
+    <div class="text-log">
+      <p class="title leaderboard">LEADER</p>
+      <textarea readonly="true">
+        Player 1 - 5 wins
+        Player 2 - 4 wins
+        Player 3 - 3 wins
+        Player 4 - 1 wins
+      </textarea>
+    </div>
+    <div class="separate"></div>
+    <div class="text-log">
+      <p class="title">LOG</p>
+      <textarea readonly="true">
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+        Player 1 shoots at A1: HIT!
+      </textarea>
+    </div>
   </footer>
 </body>
 

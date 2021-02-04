@@ -22,6 +22,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/footer.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/gameboards.css": {
 		"aP": 1,
 		"bl": 0,
@@ -44,6 +57,16 @@
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
+		},
+	"/header.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/header-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/header.scss": {
 		"aP": 0,

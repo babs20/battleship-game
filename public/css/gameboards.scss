@@ -18,6 +18,24 @@
     background-color: base.$primary-blue;
     @include base.corner;
   }
+  p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 8%;
+    height: 55%;
+    color: base.$neutral-offwhite;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0.2rem;
+    font-kerning: 1000;
+    background-color: base.$primary-blue;
+    border-radius: 6rem;
+    writing-mode: vertical-lr;
+    transform: scale(-1, -1);
+  }
 }
 
 .player {
@@ -36,12 +54,12 @@
   }
   .center-board {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 90%;
-    cursor: crosshair;
+    cursor: pointer;
     aside.y-axis {
       display: flex;
       flex-direction: column;
@@ -49,21 +67,6 @@
       align-items: center;
       width: 10%;
       height: 82%;
-      p {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 55%;
-        height: 8%;
-        color: base.$neutral-offwhite;
-        font-weight: 700;
-        font-size: 1rem;
-        margin: 0.2rem;
-        background-color: base.$primary-blue;
-        border-radius: 6rem;
-      }
     }
     .game-bounding-box {
       display: grid;
@@ -118,12 +121,17 @@ div.game-bounding-box {
     grid-area: 10 / 1 / 11 / 11;
   }
   .game-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 7%;
     height: 80%;
     background-color: base.$secondary-blue;
     border-radius: 1rem;
+    font-size: 0;
   }
   .game-tile:hover {
     background-color: base.$calm-red;
+    font-size: 70%;
   }
 }
