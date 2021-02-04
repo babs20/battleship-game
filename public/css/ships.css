@@ -3,11 +3,11 @@
   border-radius: unset;
   border: 0.1rem solid #8d99ae;
   background-color: rgba(113, 119, 128, 0.5);
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
 
 .row .game-tile:hover {
-  background-color: #d80032;
+  background-color: #944343;
 }
 
 .boat.carrier {

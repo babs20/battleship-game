@@ -8,13 +8,13 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    padding-top: 0.75rem;
+    // padding-top: 0.75rem;
     // margin: 1rem;
     // @include base.corner;
   }
   .separate {
     width: 2%;
-    height: 90%;
+    height: 80%;
     background-color: base.$primary-blue;
     @include base.corner;
   }
@@ -25,33 +25,14 @@
     all: unset;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    width: 70%;
+    width: 90%;
     height: 10%;
-    // background-color: base.$primary-blue;
-    // @include base.corner;
-    border-bottom: 0.35rem solid base.$primary-blue;
-    align-self: flex-end;
-    justify-items: flex-end;
-    margin-right: 7.5%;
-    p {
-      color: base.$neutral-offwhite;
-      font-weight: 700;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 8%;
-      height: 55%;
-      color: base.$neutral-offwhite;
-      font-weight: 700;
-      font-size: 1rem;
-      margin: 0.2rem;
-      background-color: base.$primary-blue;
-      border-radius: 6rem;
-    }
+    align-self: flex-start;
+    margin-top: 1rem;
+    margin-left: 5%;
+    @include base.corner;
   }
   .center-board {
     display: flex;
@@ -59,20 +40,15 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 80%;
+    height: 90%;
     cursor: crosshair;
-    // background-color: base.$primary-blue;
-    // @include base.corner;
     aside.y-axis {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
       width: 10%;
-      height: 85%;
-      border-right: 0.35rem solid base.$primary-blue;
-      // background-color: base.$primary-blue;
-      // @include base.corner;
+      height: 82%;
       p {
         display: flex;
         flex-direction: row;
@@ -93,9 +69,8 @@
       display: grid;
       grid-template-columns: repeat(10, 1fr);
       grid-template-rows: repeat(10, 1fr);
-      // gap: 0.25rem 0.65rem;
-      width: 70%;
-      height: 85%;
+      width: 80%;
+      height: 80%;
       padding: 0.65rem;
       background-color: base.$primary-blue;
       border-radius: 1rem;
@@ -143,8 +118,8 @@ div.game-bounding-box {
     grid-area: 10 / 1 / 11 / 11;
   }
   .game-tile {
-    width: 6%;
-    height: 60%;
+    width: 7%;
+    height: 80%;
     background-color: base.$secondary-blue;
     border-radius: 1rem;
   }

@@ -45,6 +45,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/header.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/layout.css": {
 		"aP": 1,
 		"bl": 0,
@@ -90,6 +103,16 @@
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
+		},
+	"/ships.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/ships-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/ships.scss": {
 		"aP": 0,

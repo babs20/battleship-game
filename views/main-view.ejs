@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="/css/main.css" type="text/css" />
   <link rel="stylesheet" href="/css/gameboards.css" type="text/css" />
   <link rel="stylesheet" href="/css/ships.css" type="text/css" />
+  <link rel="stylesheet" href="/css/header.css" type="text/css" />
 
 
   <!-- External JS -->
@@ -38,26 +39,38 @@
 
   </nav>
   <header>
+    <div class="side">
+      <div class="ships">
+        <p class="dead">Carrier</p>
+        <p class="dead">Battleship</p>
+        <p class="dead">Submarine</p>
+        <p class="dead"> Cruiser</p>
+        <p class="dead">Destroyer</p>
+      </div>
+    </div>
 
+    <div class="coords">
+      <p>A5</p>
+    </div>
+    <div class="side">
+      <div class="ships">
+        <p class="alive">Carrier</p>
+        <p class="alive">Battleship</p>
+        <p class="alive">Submarine</p>
+        <p class="alive">Cruiser</p>
+        <p class="alive">Destroyer</p>
+      </div>
+    </div>
   </header>
   <main>
     <div class="game">
       <section class="game-boards">
         <div class="player human">
-          <header class="x-axis">
-            <p>A</p>
-            <p>B</p>
-            <p>C</p>
-            <p>D</p>
-            <p>E</p>
-            <p>F</p>
-            <p>G</p>
-            <p>H</p>
-            <p>I</p>
-            <p>J</p>
-          </header>
+          <!-- <header class="x-axis">
+
+          </header> -->
           <div class="center-board">
-            <aside class="y-axis">
+            <!-- <aside class="y-axis">
               <p>1</p>
               <p>2</p>
               <p>3</p>
@@ -68,7 +81,7 @@
               <p>8</p>
               <p>9</p>
               <p>10</p>
-            </aside>
+            </aside> -->
             <div class="game-bounding-box">
               <div class="boat carrier" draggable="true"></div>
               <div class="boat battleship"></div>
@@ -200,20 +213,8 @@
         </div>
         <div class="separate"></div>
         <div class="player cpu">
-          <header class="x-axis">
-            <p>A</p>
-            <p>B</p>
-            <p>C</p>
-            <p>D</p>
-            <p>E</p>
-            <p>F</p>
-            <p>G</p>
-            <p>H</p>
-            <p>I</p>
-            <p>J</p>
-          </header>
           <div class="center-board">
-            <aside class="y-axis">
+            <!-- <aside class="y-axis">
               <p>1</p>
               <p>2</p>
               <p>3</p>
@@ -224,13 +225,8 @@
               <p>8</p>
               <p>9</p>
               <p>10</p>
-            </aside>
+            </aside> -->
             <div class="game-bounding-box">
-              <!-- <div class="boat carrier"></div>
-              <div class="boat battleship"></div>
-              <div class="boat cruiser"></div>
-              <div class="boat submarine"></div>
-              <div class="boat destroyer"></div> -->
               <div class="row one">
                 <div class="game-tile"></div>
                 <div class="game-tile"></div>

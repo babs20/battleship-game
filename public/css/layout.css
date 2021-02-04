@@ -26,6 +26,7 @@ body {
   align-items: center;
   background-color: #2b2d42;
   font-family: "Oswald", sans-serif;
+  color: #edf2f4;
 }
 body nav {
   display: flex;
