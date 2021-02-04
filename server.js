@@ -5,7 +5,7 @@ const cookieSession = require('cookie-session');
 const methodOverride = require('method-override');
 
 const app = express();
-const PORT = 8080;
+const PORT = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(cookieSession({

@@ -30,7 +30,7 @@
     align-self: flex-end;
     margin-right: 5%;
   }
-  div {
+  .center-board {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -38,18 +38,42 @@
     width: 100%;
     height: 80%;
     // background-color: base.$primary-blue;
-    @include base.corner;
+    // @include base.corner;
     aside.y-axis {
       width: 10%;
       height: 90%;
       background-color: base.$primary-blue;
       @include base.corner;
     }
-    div.game-spaces {
+    .game-bounding-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
       width: 75%;
       height: 90%;
       background-color: base.$primary-blue;
-      @include base.corner;
+      border-radius: 1rem;
     }
+  }
+}
+
+div.game-bounding-box {
+  .row {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 4.5%;
+    height: 93%;
+  }
+  .game-tile {
+    width: 100%;
+    height: 5%;
+    background-color: base.$secondary-blue;
+    @include base.corner;
+  }
+  .game-tile:hover {
+    background-color: base.$calm-red;
   }
 }

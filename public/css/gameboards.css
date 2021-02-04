@@ -23,24 +23,45 @@
   align-self: flex-end;
   margin-right: 5%;
 }
-.player div {
+.player .center-board {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 80%;
-  border-radius: 2rem;
 }
-.player div aside.y-axis {
+.player .center-board aside.y-axis {
   width: 10%;
   height: 90%;
   background-color: #2b2d42;
   border-radius: 2rem;
 }
-.player div div.game-spaces {
+.player .center-board .game-bounding-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   width: 75%;
   height: 90%;
   background-color: #2b2d42;
+  border-radius: 1rem;
+}
+
+div.game-bounding-box .row {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 4.5%;
+  height: 93%;
+}
+div.game-bounding-box .game-tile {
+  width: 100%;
+  height: 5%;
+  background-color: #8d99ae;
   border-radius: 2rem;
+}
+div.game-bounding-box .game-tile:hover {
+  background-color: #ef233c;
 }
