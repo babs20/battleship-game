@@ -1,0 +1,31 @@
+.boat {
+  height: 92%;
+  border-radius: unset;
+  border: 0.1rem solid #8d99ae;
+  background-color: rgba(113, 119, 128, 0.5);
+  border-radius: 1rem;
+}
+
+.row .game-tile:hover {
+  background-color: #d80032;
+}
+
+.boat.carrier {
+  grid-area: 1/1/2/6;
+}
+
+.boat.battleship {
+  grid-area: 2/1/3/5;
+}
+
+.boat.cruiser {
+  grid-area: 3/1/4/4;
+}
+
+.boat.submarine {
+  grid-area: 4/1/5/4;
+}
+
+.boat.destroyer {
+  grid-area: 5/1/6/3;
+}
