@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Meta Information -->
-  <title>Battleship Game</title>
+  <title>New Game</title>
 
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -32,6 +32,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- App JS -->
+  <script src="/components/index.js"></script>
+
+
 
 </head>
 
@@ -39,169 +42,29 @@
   <nav>
 
   </nav>
-  <header>
-    <div class="side">
-      <div class="ships player">
-        <p class="alive">Carrier</p>
-        <p class="alive">Battleship</p>
-        <p class="alive">Submarine</p>
-        <p class="alive"> Cruiser</p>
-        <p class="alive">Destroyer</p>
-      </div>
-    </div>
-
-    <div class="coords">
-      <p>JQ</p>
-    </div>
-    <div class="side">
-      <div class="ships cpu">
-        <p class="alive">Carrier</p>
-        <p class="alive">Battleship</p>
-        <p class="alive">Submarine</p>
-        <p class="alive">Cruiser</p>
-        <p class="alive">Destroyer</p>
-      </div>
-    </div>
-  </header>
   <main>
     <div class="game">
       <section class="game-boards">
-        <p>TURN: *NEED JQUERY*</p>
+        <div class="side new-game">
+          <div class="ships player">
+            <h1>Use the arrow keys to move the ship and 'R' to rotate: *SHIP NAME*
+            </h1>
+            <!-- <p>Battleship</p>
+            <p>Submarine</p>
+            <p> Cruiser</p>
+            <p>Destroyer</p> -->
+            <button>Confirm Ship Placement</button>
+            <button>Start Game</button>
+          </div>
+        </div>
         <div class="player human">
           <div class="center-board">
             <div class="game-bounding-box">
-              <div class="boat carrier" draggable="true"></div>
+              <!-- <div class="boat carrier"></div>
               <div class="boat battleship"></div>
               <div class="boat cruiser"></div>
               <div class="boat submarine"></div>
-              <div class="boat destroyer"></div>
-              <div class="row one">
-                <div class="game-tile">A1</div>
-                <div class="game-tile">B1</div>
-                <div class="game-tile">C1</div>
-                <div class="game-tile">D1</div>
-                <div class="game-tile">E1</div>
-                <div class="game-tile">F1</div>
-                <div class="game-tile">G1</div>
-                <div class="game-tile">H1</div>
-                <div class="game-tile">I1</div>
-                <div class="game-tile">J1</div>
-              </div>
-              <div class="row two">
-                <div class="game-tile">A2</div>
-                <div class="game-tile">B2</div>
-                <div class="game-tile">C2</div>
-                <div class="game-tile">D2</div>
-                <div class="game-tile">E2</div>
-                <div class="game-tile">F2</div>
-                <div class="game-tile">G2</div>
-                <div class="game-tile">H2</div>
-                <div class="game-tile">I2</div>
-                <div class="game-tile">J2</div>
-              </div>
-              <div class="row three">
-                <div class="game-tile">A3</div>
-                <div class="game-tile">B3</div>
-                <div class="game-tile">C3</div>
-                <div class="game-tile">D3</div>
-                <div class="game-tile">E3</div>
-                <div class="game-tile">F3</div>
-                <div class="game-tile">G3</div>
-                <div class="game-tile">H3</div>
-                <div class="game-tile">I3</div>
-                <div class="game-tile">J3</div>
-              </div>
-              <div class="row four">
-                <div class="game-tile">A4</div>
-                <div class="game-tile">B4</div>
-                <div class="game-tile">C4</div>
-                <div class="game-tile">D4</div>
-                <div class="game-tile">E4</div>
-                <div class="game-tile">F4</div>
-                <div class="game-tile">G4</div>
-                <div class="game-tile">H4</div>
-                <div class="game-tile">I4</div>
-                <div class="game-tile">J4</div>
-              </div>
-              <div class="row five">
-                <div class="game-tile">A5</div>
-                <div class="game-tile">B5</div>
-                <div class="game-tile">C5</div>
-                <div class="game-tile">D5</div>
-                <div class="game-tile">E5</div>
-                <div class="game-tile">F5</div>
-                <div class="game-tile">G5</div>
-                <div class="game-tile">H5</div>
-                <div class="game-tile">I5</div>
-                <div class="game-tile">J5</div>
-              </div>
-              <div class="row six">
-                <div class="game-tile">A6</div>
-                <div class="game-tile">B6</div>
-                <div class="game-tile">C6</div>
-                <div class="game-tile">D6</div>
-                <div class="game-tile">E6</div>
-                <div class="game-tile">F6</div>
-                <div class="game-tile">G6</div>
-                <div class="game-tile">H6</div>
-                <div class="game-tile">I6</div>
-                <div class="game-tile">J6</div>
-              </div>
-              <div class="row seven">
-                <div class="game-tile">A7</div>
-                <div class="game-tile">B7</div>
-                <div class="game-tile">C7</div>
-                <div class="game-tile">D7</div>
-                <div class="game-tile">E7</div>
-                <div class="game-tile">F7</div>
-                <div class="game-tile">G7</div>
-                <div class="game-tile">H7</div>
-                <div class="game-tile">I7</div>
-                <div class="game-tile">J7</div>
-              </div>
-              <div class="row eight">
-                <div class="game-tile">A8</div>
-                <div class="game-tile">B8</div>
-                <div class="game-tile">C8</div>
-                <div class="game-tile">D8</div>
-                <div class="game-tile">E8</div>
-                <div class="game-tile">F8</div>
-                <div class="game-tile">G8</div>
-                <div class="game-tile">H8</div>
-                <div class="game-tile">I8</div>
-                <div class="game-tile">J8</div>
-              </div>
-              <div class="row nine">
-                <div class="game-tile">A9</div>
-                <div class="game-tile">B9</div>
-                <div class="game-tile">C9</div>
-                <div class="game-tile">D9</div>
-                <div class="game-tile">E9</div>
-                <div class="game-tile">F9</div>
-                <div class="game-tile">G9</div>
-                <div class="game-tile">H9</div>
-                <div class="game-tile">I9</div>
-                <div class="game-tile">J9</div>
-              </div>
-              <div class="row ten">
-                <div class="game-tile">A10</div>
-                <div class="game-tile">B10</div>
-                <div class="game-tile">C10</div>
-                <div class="game-tile">D10</div>
-                <div class="game-tile">E10</div>
-                <div class="game-tile">F10</div>
-                <div class="game-tile">G10</div>
-                <div class="game-tile">H10</div>
-                <div class="game-tile">I10</div>
-                <div class="game-tile">J10</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="separate"></div>
-        <div class="player cpu">
-          <div class="center-board">
-            <div class="game-bounding-box">
+              <div class="boat destroyer"></div> -->
               <div class="row one">
                 <div class="game-tile">A1</div>
                 <div class="game-tile">B1</div>
@@ -328,23 +191,6 @@
       </section>
     </div>
   </main>
-  <footer>
-    <div class="text-log">
-      <p class="title leaderboard">LEADER</p>
-      <textarea readonly="true">
-        *NEED JQUERY*
-        *NEED JQUERY*
-      </textarea>
-    </div>
-    <div class="separate"></div>
-    <div class="text-log">
-      <p class="title">LOG</p>
-      <textarea readonly="true">
-        *NEED JQUERY*
-        *NEED JQUERY*
-      </textarea>
-    </div>
-  </footer>
 </body>
 
 </html>

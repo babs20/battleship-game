@@ -17,7 +17,11 @@ app.use(methodOverride('_method'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.render('main-view');
+  res.render('main');
+});
+
+app.get('/new', (req, res) => {
+  res.render('new-game');
 });
 
 // PORT LISTEN //

@@ -12,7 +12,8 @@
   background-color: #2b2d42;
   border-radius: 2rem;
 }
-.game-boards p {
+.game-boards p,
+.game-boards button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -123,4 +124,29 @@ div.game-bounding-box .game-tile {
 div.game-bounding-box .game-tile:hover {
   background-color: #944343;
   font-size: 70%;
+}
+
+.side.new-game {
+  width: 100%;
+  height: 100%;
+}
+.side.new-game p,
+.side.new-game button {
+  writing-mode: unset;
+  transform: unset;
+  width: 100%;
+  background-color: #2b2d42;
+}
+.side.new-game p:hover,
+.side.new-game button:hover {
+  background-color: #439458;
+  cursor: pointer;
+}
+.side.new-game .ships.player {
+  flex-direction: column;
+}
+.side.new-game button {
+  margin-top: 2rem;
+  padding: unset;
+  border: unset;
 }
