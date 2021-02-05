@@ -17,7 +17,19 @@ app.use(methodOverride('_method'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.render('main');
+  res.render('main-view');
+});
+
+app.post('/', (req, res) => {
+  const pos = req.body;
+  const templateVars = {
+    carrier: pos.carrier,
+    battleship: pos.battleship,
+    cruiser: pos.cruiser,
+    submarine: pos.submarine,
+    destroyer: pos.destroyer,
+  };
+  res.render('main-view', templateVars);
 });
 
 app.get('/new', (req, res) => {
